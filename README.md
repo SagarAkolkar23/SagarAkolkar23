@@ -3,7 +3,6 @@
 - 🌱 I’m currently learning Android Development
 - 📫 You can reach to me via my Email : Akolkarsagar14@gmail.com
 
-- This is my first android project named Notes. It is simple notes app which allows user to create, edit, save and delete notes.
 
 
 <!---
