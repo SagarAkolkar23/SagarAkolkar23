@@ -2,7 +2,6 @@
 <div align="center">
   <h1>👋 Hey, I'm <span style="color:#6C63FF">Sagar Akolkar</span></h1>
   <p><i>Builder at heart, student by profession — turning ideas into impactful technology</i></p>
-  <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="300" />
 </div>
 
 ---
