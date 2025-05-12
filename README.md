@@ -9,16 +9,19 @@
 ### 🚀 About Me
 
 - 🎓 CS Undergrad @ **Deogiri Institute of Engineering**
-- 🧠 Passionate about Android and Full-Stack Development
-- 🧩 Solving real-world problems with code
-- 🧰 Tech stack: **Jetpack Compose**, **Firebase**, **MERN Stack**, **Ktor**, **Docker**
-- 🧪 Currently building cross-platform apps using **shared backend logic**
+- 💡 Builder of user-centric apps and systems
+- 📱 Passionate about **Android**, **Full-Stack**, and **Cross-Platform** development
+- 🧩 I love solving real-world problems with elegant code
+- 🛠 Tech I'm confident in: `Flutter`, `Jetpack Compose`, `MERN`, `Ktor`, `Firebase`, `Docker`
+- 🔭 Currently crafting apps using **shared logic across platforms** with `Ktor + Flutter/Compose`
+- 🧠 Lifelong learner obsessed with DevOps, AI integrations & scalable architecture
 
 ---
 
-### 🧰 Tech Toolbox
+### 🧰 My Tech Toolbox
+
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=java,kotlin,js,react,nodejs,express,mongodb,python,androidstudio,firebase,docker,postman,git,github,vscode" />
+  <img src="https://skillicons.dev/icons?i=dart,flutter,java,kotlin,js,react,nodejs,express,mongodb,python,androidstudio,firebase,docker,postman,git,github,vscode" />
 </p>
 
 ---
@@ -43,16 +46,19 @@
 
 ---
 
-### 🔀 Full-Stack Hybrids
+### 🔀 Cross-Platform Projects
 
-| Project     | Description                                                | Stack |
-|-------------|------------------------------------------------------------|-------|
-| **Note**     | Synchronized website & Android notes app                 | `MERN + Jetpack Compose + Ktor` |
-| **CuroSync** | E-prescription + AI-based medicine identifier & tracker  | `MERN + Jetpack Compose + Ktor + AI` |
+| Project     | Description                                                    | Stack |
+|-------------|----------------------------------------------------------------|-------|
+| **Note**     | Synchronized web + Android notes app                         | `Flutter + Jetpack Compose + Ktor` |
+| **CuroSync** | AI-based e-prescription & medicine tracker                   | `Flutter + Compose + MERN + Ktor` |
+| **FinFlow**  | Personal finance manager with sync across platforms          | `Flutter + Firebase + REST APIs` |
+| **DailyZen** | Habit & mood tracker with cross-device sync                  | `Flutter + Hive + Firebase` |
 
 ---
 
 ### 📊 GitHub Stats
+
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=SagarAkolkar23&show_icons=true&theme=tokyonight" width="47%" />
   <img src="https://github-readme-streak-stats.herokuapp.com?user=SagarAkolkar23&theme=tokyonight" width="47%" />
@@ -61,6 +67,7 @@
 ---
 
 ### 🤝 Let's Connect
+
 <p>
   <a href="mailto:akolkarsagar14@gmail.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
@@ -76,5 +83,6 @@
 ---
 
 <div align="center">
-  <b>“Code is my canvas, and I paint solutions with it.”</b>
+  <b>“Code is my canvas, and I paint solutions with it.”</b><br/>
+  <i>Currently blending native & cross-platform for tech that truly connects.</i>
 </div>
