@@ -21,7 +21,7 @@
 
 <br/><br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=1200&color=A78BFA&center=true&vCenter=true&width=700&lines=Building+systems+that+solve+real+problems.;Node.js+%7C+Express+%7C+React+%7C+AWS;50%2C000%2B+emails%2Fhr+at+scale.+For+real.;National+SIH+2025+Winner+%F0%9F%8F%86;Open+to+Internship+Opportunities." alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=1200&color=A78BFA&center=true&vCenter=true&width=700&lines=Building+systems+that+solve+real+problems.;Node.js+%7C+React+%7C+Kafka+%7C+Redis+%7C+AWS;Bulk+WhatsApp+campaigns+on+Kafka+%2B+workers.;National+SIH+2025+Winner+%F0%9F%8F%86;Open+to+Internship+Opportunities." alt="Typing SVG" />
 
 </div>
 
@@ -35,7 +35,7 @@ const sagar: Developer = {
   location    : "Chh. Sambhajinagar, Maharashtra 🇮🇳",
   education   : "B.Tech CSE — Deogiri Institute (Graduating May 2027)",
   role        : "Full Stack Developer",
-  focus       : ["Scalable Backend Systems", "REST API Design", "Cloud Deployment"],
+  focus       : ["Scalable Backend Systems", "Event-Driven Architecture (Kafka)", "REST API Design", "Cloud Deployment"],
   achievements: [
     "🏆 National Winner — Smart India Hackathon 2025 (500+ teams)",
     "🥇 INNOHACK 1st Prize Winner",
@@ -55,7 +55,7 @@ const sagar: Developer = {
 
 | 🥇 Award | 📍 Where | 📅 When |
 |:---|:---|:---|
-| **Smart India Hackathon — National Winner** | Odisha (selected from 500+ college teams) | Dec 2025 |
+| **Smart India Hackathon — National Winner** | Odisha (500+ teams shortlisted from colleges across India) | Dec 2025 |
 | **INNOHACK — 1st Prize** | Deogiri Institute | 2024 |
 | **Production Freelance Delivery** | Pit Labs (Pictonion) — 6-month engagement, 99% uptime | Aug 2025 – Feb 2026 |
 
@@ -70,12 +70,17 @@ const sagar: Developer = {
 ### Backend & APIs
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![Kafka](https://img.shields.io/badge/Apache%20Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)
+![WhatsApp Cloud API](https://img.shields.io/badge/WhatsApp%20Cloud%20API-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)
 ![REST API](https://img.shields.io/badge/REST%20API-005571?style=for-the-badge&logo=api&logoColor=white)
 ![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=for-the-badge&logo=socket.io&logoColor=white)
 ![BullMQ](https://img.shields.io/badge/BullMQ-E02020?style=for-the-badge&logo=redis&logoColor=white)
 
 ### Frontend
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TanStack Query](https://img.shields.io/badge/TanStack%20Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white)
+![Zustand](https://img.shields.io/badge/Zustand-433E38?style=for-the-badge)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 
@@ -105,25 +110,49 @@ const sagar: Developer = {
 ## 🚀 Featured Projects
 
 <details open>
-<summary><b>📧 Sendora — Bulk Email Automation Platform</b> &nbsp;<code>2026</code></summary>
+<summary><b>💬 Pictonion (Pit Labs) — Production CRM: Feedback, Rewards, Ticketing & WhatsApp Campaigns</b> &nbsp;<code>Freelance · 6 months</code></summary>
 
 <br/>
 
-> **The problem:** Sending millions of emails reliably, at scale, without dropping jobs.
+> **The problem:** Businesses had no unified way to collect customer feedback, reward customers, resolve tickets and reach them on WhatsApp at scale.
+
+🔗 **Live (staging):** [staging.pictonion.com](https://staging.pictonion.com/)
 
 **What I built:**
-- ⚙️ Queue-based email engine using **BullMQ + Redis** — processes **5,000+ emails/hour**
-- 📡 RESTful campaign management APIs with dynamic templates & scheduling
-- 🐳 Fully containerized with **Docker** — deploy in under 10 minutes
-- 📊 Delivery tracking, retry logic, and failure handling built-in
+- 🔐 **Redis-backed session authentication + role-based authorization (RBAC)** in Node.js/Express: server-side sessions in Redis, role checks guarding every sensitive route
+- 🧩 Core CRM modules: drag-and-drop **Kanban sales pipeline** with optimistic updates, customer & employee management, coupon/rewards engine, support-ticket dashboard with KPIs and trend analytics
+- 📲 **Bulk WhatsApp campaign messaging** on the **WhatsApp Cloud API**: Meta Embedded Signup onboarding, multi-tenant model (orgs → WABAs → phone numbers), encrypted per-tenant tokens, template management APIs, multi-channel campaign schema
+- 🧵 **Kafka + workers architecture:** Postgres transactional outbox → dispatcher → fan-out consumers → horizontally scalable sender workers
+- 🚦 **Token-bucket rate limiting** in the sender workers to stay within Meta's API throughput limits while absorbing bursts smoothly
+- 🗄️ PostgreSQL with proper indexing and query optimization
+- ☁️ Deployed on **AWS EC2 + S3** — maintained **99% uptime** across 6 months
+- 👥 Served real end users; not a side project
 
-**Stack:** `React` `Node.js` `Express` `Redis` `BullMQ` `Docker`
+**Stack:** `React` `TanStack Query` `Zustand` `Tailwind` `Node.js` `Express` `PostgreSQL` `Redis` `Kafka` `WhatsApp Cloud API` `AWS EC2` `AWS S3`
 
 </details>
 
 ---
 
 <details open>
+<summary><b>🔍 Phishy — ML-Powered Phishing Detection</b> &nbsp;<code>2025</code></summary>
+
+<br/>
+
+> **The problem:** Users click phishing links because browsers don't warn them fast enough.
+
+**What I built:**
+- 🤖 Trained my own URL classification model — **94.6% accuracy**, <5% false-positive rate on 15K URLs
+- ⚡ Browser extension in JavaScript with real-time inference — minimal visible latency
+- 🧠 End-to-end: data collection → model training and evaluation → deployment
+
+**Stack:** `Python` `Machine Learning` `JavaScript` `Browser Extension API`
+
+</details>
+
+---
+
+<details>
 <summary><b>💡 VeerGrid — Solar Microgrid Automation System</b> &nbsp;<code>SIH 2025 Winner</code></summary>
 
 <br/>
@@ -131,10 +160,10 @@ const sagar: Developer = {
 > **The problem:** Solar microgrids in rural areas waste energy without smart automation.
 
 **What I built:**
-- 📡 Real-time dashboard integrating **hardware controllers via MQTT protocol**
+- 📡 Real-time dashboard integrating **hardware controllers via MQTT**
 - 🔁 Automated load-balancing algorithm → **+15% efficiency** (measured on real hardware)
 - 📱 React Native mobile app for remote monitoring of power output, faults & load distribution
-- 🛠️ Delivered working prototype in **120 hours** under SIH conditions
+- 🛠️ Delivered a working prototype in **120 hours** under SIH conditions
 
 **Stack:** `React Native` `Node.js` `MQTT` `WebSockets` `Docker`
 
@@ -143,37 +172,18 @@ const sagar: Developer = {
 ---
 
 <details>
-<summary><b>💬 Pictonion (Pit Labs) — Production Feedback Platform</b> &nbsp;<code>Freelance · 6 months</code></summary>
+<summary><b>📝 ExamForge — Online Exam Portal</b> &nbsp;<code>2025 · Live in college</code></summary>
 
 <br/>
 
-> **The problem:** Businesses had no unified way to collect and act on customer feedback.
+> **The problem:** Online exams fail when the network drops or a student's session breaks mid-test.
 
 **What I built:**
-- 🔐 RESTful APIs with **JWT auth + RBAC** — 100% of sensitive routes audited
-- 🗄️ PostgreSQL database with proper indexing and query optimization
-- ☁️ Deployed on **AWS EC2 + S3** — maintained **99% uptime** across 6 months
-- 👥 Served real end users; not a side project
+- 📴 **Offline-first, fail-safe design:** auto-save, checkpoint recovery and seamless sync
+- 🔒 Secure authentication with scalability, fault tolerance and high availability in mind
+- 🏫 Deployed on EC2 and **actively used in our college**
 
-**Stack:** `React` `Node.js` `Express` `PostgreSQL` `AWS EC2` `AWS S3`
-
-</details>
-
----
-
-<details>
-<summary><b>🔍 Phishy — ML-Powered Phishing Detection Extension</b> &nbsp;<code>2025</code></summary>
-
-<br/>
-
-> **The problem:** Users click phishing links because browsers don't warn them fast enough.
-
-**What I built:**
-- 🤖 Trained a custom URL classification model — **94.6% accuracy**, <5% false-positive rate on 15K URLs
-- ⚡ Browser extension in JavaScript with real-time inference — minimal visible latency
-- 🧠 End-to-end: data collection → model training → deployment in browser
-
-**Stack:** `Python` `Machine Learning` `JavaScript` `Browser Extension API`
+**Stack:** `React` `Node.js` `EC2`
 
 </details>
 
@@ -185,9 +195,10 @@ const sagar: Developer = {
 Pit Labs (Pictonion)                                         Aug 2025 – Feb 2026
 Software Developer — Freelance Remote
 
-  ✅ Shipped a production-ready customer feedback & ticketing platform
-  ✅ Node.js + Express REST APIs with JWT auth and RBAC
-  ✅ PostgreSQL — 100% of sensitive routes secured and audited
+  ✅ Built and deployed a production CRM for customer feedback, rewards and ticketing
+  ✅ Redis-backed session authentication and RBAC across all sensitive routes
+  ✅ Kanban pipeline, rewards engine and ticket analytics dashboard
+  ✅ Bulk WhatsApp campaigns: Cloud API + Kafka + workers + token-bucket rate limiting
   ✅ AWS EC2 + S3 deployment — 99% uptime over full engagement
   ✅ Real end users. Real traffic. Real accountability.
 ```
@@ -225,7 +236,8 @@ Software Developer — Freelance Remote
 |:---:|:---|:---|
 | ⚡ | **Ships fast under pressure** | SIH prototype in 120 hours, 500+ teams, won nationally |
 | 🏗️ | **Builds for production, not demos** | 99% uptime, real users, 6-month freelance engagement |
-| 📐 | **Thinks in systems** | 5K emails/hour queue architecture, RBAC, load-balancing algorithms |
+| 📐 | **Thinks in systems** | Kafka + workers pipeline, token-bucket rate limiting, Redis sessions & RBAC, load-balancing algorithms |
+| 🤖 | **Trains and ships ML** | Own phishing-detection model, 94.6% accuracy |
 | 🔧 | **Owns the full stack** | Frontend → API → DB → DevOps → Cloud |
 | 🚀 | **Available & committed** | 8h+/day, remote-ready, 2027 graduate |
 
